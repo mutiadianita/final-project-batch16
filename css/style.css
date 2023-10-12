@@ -1,5 +1,80 @@
 /* min 10 selector */
-
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&family=Pixelify+Sans:wght@400;500;600;700&display=swap');
 body {
-    color: blue;
+    margin: 0;
+    font-family: 'Gabarito', sans-serif;
+}
+
+#navbar {
+    display: flex;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 16px;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 10;
+}
+
+#navbar-title {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+#link-list {
+    list-style: none;
+    display: flex;
+    column-gap: 16px;
+    margin: 0;
+    margin-top: 4px;
+}
+#link-list a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 8px;
+}
+#link-list a:hover {
+    background-color: gray;
+}
+#home {
+    position: relative;
+}
+#home-image {
+    width: 100%;
+}
+#home-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+}
+.home-text {
+    margin: auto;
+}
+
+#about {
+    background-color: black;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+#experience {
+    background-color: white;
+    text-align: center;
+}
+#experience-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#experience-content div {
+    padding: 40px;
 }
